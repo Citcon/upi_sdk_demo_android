@@ -101,34 +101,6 @@ class MainActivity : AppCompatActivity() {
                 .setPositiveButton("Quit", null)
                 .setMessage(message).create().show()
         }
-
-
-        /*
-
-        // test alipay
-        var reference = System.currentTimeMillis().toString();
-        var accessToken = "UPI_eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImM4YTQ2ODgzZWJlODE0YWRmZjdmZTNhYWNlZGRmMTIxZTQ1NmQzYjlkN2I1MTk4ZjcwNjQxNTgzMjVjNjM0MWYiLCJpYXQiOjE2ODU5NTY3NDcsImV4cCI6MTY4NjA0MzE0N30.VZnc3SjXP8X28bblRUoqWS3PUsaZEvGeX91Z9FhzbRA"
-        CPayRequest.UPIOrderBuilder
-            .accessToken(accessToken)
-            .reference(reference)
-            .consumerID("8888")
-            .currency("CNY")
-//            .currency("USD")
-            .amount("10")
-            .callbackURL("https://exampe.com/mobile")
-            .ipnURL("https://exampe.com/ipn")
-            .mobileURL("https://exampe.com/mobile")
-            .cancelURL("https://exampe.com/cancel")
-            .failURL("https://exampe.com/fail")
-            .setAllowDuplicate(true)
-            .paymentMethod(CPayMethodType.ALI)
-            .country(Locale.CHINA)
-//            .country(Locale.US)
-//            .setExpiry(System.currentTimeMillis()+mTimeout.toLong())
-            .build(CPayENVMode.UAT).start(this, mStartForResult);
-//        https://api.sandbox.citconpay.com/v1/
-
-        */
     }
 
     private fun launchDropin(type: CPayMethodType) {
